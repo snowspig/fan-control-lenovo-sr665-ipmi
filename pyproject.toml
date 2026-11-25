@@ -1,0 +1,17 @@
+[project]
+name = "sr665-fanctl"
+version = "0.1.0"
+description = "Closed-loop fan controller for the Lenovo ThinkSystem SR665"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "snowspig" }]
+keywords = ["lenovo", "thinksystem", "sr665", "ipmi", "fan-control", "noise"]
+
+[project.urls]
+Homepage = "https://github.com/snowspig/fan-control-lenovo-sr665-ipmi"
+Issues = "https://github.com/snowspig/fan-control-lenovo-sr665-ipmi/issues"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

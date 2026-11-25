@@ -1,0 +1,67 @@
+# SR665 fan controller configuration.
+# Measured values come from docs/probe-results.md (Phase 0 probe).
+
+interval_s = 5.0
+fans = [1, 2, 3, 4, 5, 6]      # for tach verification only
+
+# --- Duty scale -------------------------------------------------------------
+# Duty is the OEM speed byte sent to the BMC (1..255). On this machine it maps
+# to about 80 rpm per unit, but the low end is lifted: byte 8 is already
+# 1600 rpm, byte 30 about 3040 rpm, byte 255 about 18400 rpm.
+# Byte 0 is reserved: it is how the BMC is asked to resume automatic control.
+min_duty = 30            # quiet idle (about 3040 rpm), must be >= hard_floor_duty
+hard_floor_duty = 8      # measured: the lowest byte with both rotors >= 1500 rpm
+safe_duty = 100          # start value (about 8000 rpm), close to the BMC's own
+
+hysteresis_c = 2.0
+max_fall_per_cycle = 16  # 255 -> 30 takes about 75 s, 100 -> 30 about 25 s
+sensor_fail_cycles = 3
+tach_fail_cycles = 2
+min_tach_rpm = 1500
+min_tach_fraction = 0.5
+
+emergency_c = { cpu = 85.0, dimm = 85.0, nvme = 78.0 }
+
+cpu_curve = [[55, 30], [65, 60], [75, 100], [85, 255]]
+dimm_curve = [[70, 30], [78, 60], [85, 255]]
+nvme_curve = [[55, 30], [65, 60], [72, 100], [78, 255]]
+
+# Measured (duty byte, lowest measured rotor rpm); the check uses half of it.
+expected_rpm = [[8, 1600], [10, 1680], [15, 1920], [20, 2240], [25, 2560],
+                [30, 3040], [40, 3680], [50, 4400], [60, 5040], [75, 6080],
+                [100, 8000], [127, 10000], [192, 14080], [255, 18400]]
+
+# --- Sensor addresses (measured on this SR665, XCC 3.01; see docs/probe-results.md) ---
+# Readings use raw "Get Sensor Reading" commands (one IPMI message each) because
+# `ipmitool sensor list` walks ~300 SDR records and takes ~8 s. The same sensor
+# number on the wrong LUN is a different sensor, hence the explicit LUNs.
+# `fanctl run` cross-checks these against the SDR reference before starting.
+[tach]
+lun = 0
+front_numbers = [0x41, 0x42, 0x43, 0x44, 0x45, 0x46]
+rear_numbers  = [0x49, 0x4a, 0x4b, 0x4c, 0x4d, 0x4e]
+front_m = 80.0          # front rotor rpm = 80 * raw
+rear_m  = 74.0          # rear rotor rpm = 74 * raw
+b = 0.0
+
+[dimm]
+lun = 1                 # DIMM sensors live on LUN 1 on this XCC
+base_number = 0x50      # DIMM n -> sensor number 0x50 + n
+slot_count = 32         # probed once at startup; empty slots answer "not found"
+m = 1.0                 # degrees C
+b = 0.0
+
+# --- NVMe temperatures ---------------------------------------------------
+# The HighPoint driver (hptnvme) claims the drives, so the kernel no longer
+# exposes "nvme" hwmon chips. Temperatures come from hptsvr via hptraidconf:
+# one query is ~3 s and hptsvr serialises them, so a background thread reads
+# one drive per round and the control loop uses the freshest values.
+[nvme]
+devices = ["1/E1/1", "1/E1/2", "1/E1/3", "1/E1/4", "1/E1/5", "1/E1/6", "1/E1/7", "1/E1/8"]
+binary = "hptraidconf"
+# Factory-default credentials of the HighPoint management software (hptsvr).
+user = "RAID"
+password = "hpt"
+timeout_s = 15.0
+pause_s = 2.0
+stale_s = 90.0

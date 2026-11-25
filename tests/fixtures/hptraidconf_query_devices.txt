@@ -1,0 +1,24 @@
+Mode Number:        Samsung SSD 990 PRO 1TB
+Serial Number:      S6Z1NX0X0000001
+Firmware Version:   8B2QJXD7
+Capacity(GB):   1000.12             TotalFree(GB):  0
+Status:         RAID                Flag:           NORMAL
+SED Capable:    Yes                 SED Type:       OPAL
+Secured:        No                  Cryptographic Erase Capable:  No
+PCIe Width:     x4                  PCIe Speed:     Gen 4
+Temperature(C): 38                  Total Bytes Written: 10.00 TB
+------------------------------------------------------------------------------
+				NVMe S.M.A.R.T Attributes
+Critical Warning                                  	0x0
+Composite Temperature (C)                          	38
+Avaliable Spare                                   	100%
+Avaliable Spare Threshold                          	10%
+Precentage Used                                   	3%
+Data Units Read                                   	0x7e7d0ed
+Data Units Written                                	0x40c0d7d
+Warning Temperature Time                          	0x0
+Critical Composite Temperature Time               	0x0
+Temperature Sensor 1 (C)                          	38
+Temperature Sensor 2 (C)                          	43
+Temperature Sensor 3 (C)                          	0
+------------------------------------------------------------------------------

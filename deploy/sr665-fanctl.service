@@ -1,0 +1,26 @@
+[Unit]
+Description=SR665 fan speed controller (IPMI closed loop)
+Documentation=file:/opt/fan-control/docs/design.md
+After=multi-user.target
+
+[Service]
+Type=simple
+User=fanctl
+Group=ipmi
+ExecStart=/usr/local/bin/fanctl run
+# Whatever happens, hand fan control back to the BMC: its own thermal policy
+# is the safe state (about 8.9k rpm, well below the emergency speed).
+ExecStopPost=/bin/sh -c '/usr/local/bin/fanctl auto || /usr/bin/ipmitool raw 0x3a 0x07 0xff 0x00 0x00'
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+CapabilityBoundingSet=
+DevicePolicy=closed
+DeviceAllow=/dev/ipmi0 rw
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

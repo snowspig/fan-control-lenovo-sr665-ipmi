@@ -1,0 +1,197 @@
+CPUs             | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+All CPUs         | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+One of CPUs      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+CPU 1 Status     | 0x80       | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+CPU 2 Status     | 0x80       | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+IPMI Watchdog    | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SEL Fullness     | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Host Power       | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+NMI State        | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+No I/O Resources | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+RAID Log         | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+3_STRIKE_TIMEOUT | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+All DIMMs        | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMMs            | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+One of DIMMs     | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Backup Memory    | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Lane Failover    | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Memory Resized   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Non-Auth DIMMs   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SMI Lane Failed  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PCIs             | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+All PCI Error    | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+One of PCIs      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Aux Log          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Firmware Error   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+GPT Status       | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+No Boot Device   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+No Op ROM Space  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Progress         | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+PFR UEFI         | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Sec Rollback Err | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Secure Boot Err  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Sys Boot Status  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+TPM_TCM Init Err | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+TPM_TCM Lock     | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+TXT ACM Module   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Drive Key Fault  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SMM Mode         | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SMM Monitor      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+XCC FW Corrupted | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+XCC Switchover   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Low Security Jmp | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+XCC DB Status    | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Chassis          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+NIC Link state   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Ambient Temp     | 25.000     | degrees C  | ok    | na        | na        | na        | 43.000    | 47.000    | 50.000    
+Exhaust Temp     | 30.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+System Air Flow  | 72.000     | CFM        | ok    | na        | na        | na        | na        | na        | na        
+CPU 1 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU 1 Temp       | 39.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+CPU 1 DTS        | -51.000    | unspecified | ok    | na        | na        | na        | na        | -0.200    | 0.000     
+CPU ExtLink 1 Er | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+CPU 2 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU 2 Temp       | 39.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+CPU 2 DTS        | -51.000    | unspecified | ok    | na        | na        | na        | na        | -0.200    | 0.000     
+CPU ExtLink 2 Er | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 1           | 0x40       | discrete   | 0x4080| na        | na        | na        | na        | na        | na        
+DIMM 1 Temp      | 30.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+DIMM 2           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 2 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 3           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 3 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 4           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 4 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 5           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 5 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 6           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 6 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 7           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 7 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 8           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 8 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 9           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 9 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 10          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 10 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 11          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 11 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 12          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 12 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 13          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 13 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 14          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 14 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 15          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 15 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 16          | 0x40       | discrete   | 0x4080| na        | na        | na        | na        | na        | na        
+DIMM 16 Temp     | 31.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+DIMM 17          | 0x40       | discrete   | 0x4080| na        | na        | na        | na        | na        | na        
+DIMM 17 Temp     | 31.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+DIMM 18          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 18 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 19          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 19 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 20          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 20 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 21          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 21 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 22          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 22 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 23          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 23 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 24          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 24 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 25          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 25 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 26          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 26 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 27          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 27 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 28          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 28 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 29          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 29 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 30          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 30 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 31          | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+DIMM 31 Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+DIMM 32          | 0x40       | discrete   | 0x4080| na        | na        | na        | na        | na        | na        
+DIMM 32 Temp     | 33.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+SysBrd 12V       | 12.096     | Volts      | ok    | na        | 10.808    | na        | na        | 13.216    | na        
+SysBrd 5V        | 4.984      | Volts      | ok    | na        | 4.493     | na        | na        | 5.499     | na        
+SysBrd 3.3V      | 3.255      | Volts      | ok    | na        | 2.976     | na        | na        | 3.627     | na        
+CMOS Battery     | 3.120      | Volts      | ok    | na        | 2.249     | 2.392     | na        | na        | na        
+SysBrd Vol Fault | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU 1 VR         | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU 2 VR         | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Pwr Rail ABCD Er | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Pwr Rail EFGH Er | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Pwr Rail IJKL Er | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Pwr Rail MNOP Er | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Fan Mismatch     | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Fan 1 Front Tach | 8560.000   | RPM        | ok    | na        | 960.000   | na        | na        | na        | na        
+Fan 2 Front Tach | 8240.000   | RPM        | ok    | na        | 960.000   | na        | na        | na        | na        
+Fan 3 Front Tach | 8240.000   | RPM        | ok    | na        | 960.000   | na        | na        | na        | na        
+Fan 4 Front Tach | 8240.000   | RPM        | ok    | na        | 960.000   | na        | na        | na        | na        
+Fan 5 Front Tach | 8560.000   | RPM        | ok    | na        | 960.000   | na        | na        | na        | na        
+Fan 6 Front Tach | 8560.000   | RPM        | ok    | na        | 960.000   | na        | na        | na        | na        
+Fan 1 Rear Tach  | 8510.000   | RPM        | ok    | na        | 962.000   | na        | na        | na        | na        
+Fan 2 Rear Tach  | 8880.000   | RPM        | ok    | na        | 962.000   | na        | na        | na        | na        
+Fan 3 Rear Tach  | 8880.000   | RPM        | ok    | na        | 962.000   | na        | na        | na        | na        
+Fan 4 Rear Tach  | 8880.000   | RPM        | ok    | na        | 962.000   | na        | na        | na        | na        
+Fan 5 Rear Tach  | 8880.000   | RPM        | ok    | na        | 962.000   | na        | na        | na        | na        
+Fan 6 Rear Tach  | 8510.000   | RPM        | ok    | na        | 962.000   | na        | na        | na        | na        
+Sys Power        | 280.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPU Power        | 110.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+Sys Fan Pwr      | 35.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU Mismatch     | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PS Heavy Load    | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Power Resource   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PSU 1            | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 1 Failure    | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 1 PF Failure | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 1 IN Failure | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 1 AC In Pwr  | 145.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU 1 DC Out Pwr | 130.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU 2            | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 2 Failure    | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 2 PF Failure | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 2 IN Failure | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU 2 AC In Pwr  | 135.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU 2 DC Out Pwr | 120.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PCI Riser 1      | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PCI Riser 2      | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PCI Riser 3      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PCI 2 Fault      | 0x4        | discrete   | 0x0480| na        | na        | na        | na        | na        | na        
+PCI 2 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PCI 3 Fault      | 0x4        | discrete   | 0x0480| na        | na        | na        | na        | na        | na        
+PCI 3 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PCI 4 Fault      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PCI 4 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PCI 5 Fault      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PCI 5 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PCI 6 Fault      | 0x4        | discrete   | 0x0480| na        | na        | na        | na        | na        | na        
+PCI 6 OverTemp   | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+OCP Fault        | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+OCP OverTemp     | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+RAID Card 1      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+RAID Card 2      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+RAID Card 3      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+RAID Card 4      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+RAID Card 5      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+RAID Card 6      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+BP 1 Status      | 0x1        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+BP 2 Status      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+BP 3 Status      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Rear BP1 Status  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Rear BP2 Status  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Mid BP 1 Status  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Mid BP 2 Status  | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Front Panel      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+TPM Module Prsnt | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+COMport Card     | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Front Video      | 0x2        | discrete   | 0x0280| na        | na        | na        | na        | na        | na        
+Ext Drive        | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Ext Enclosure PS | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Drive Mismatch   | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
